@@ -10,12 +10,6 @@ pipeline {
         maven 'Maven' 
     }
 
-    triggers {
-        // Déclencheur : vérifie le dépôt Git toutes les 5 minutes pour des changements.
-        // Si un changement est détecté, le pipeline démarre.
-        pollSCM('H/5 * * * *')
-    }
-
     stages {
         // Étape 1 : Récupération du code
         // Cette étape utilise les credentials configurés dans le pipeline Jenkins
