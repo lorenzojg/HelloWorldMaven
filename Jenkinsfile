@@ -75,7 +75,7 @@ pipeline {
         }
         // En cas de succès, archive les résultats des tests (bonne pratique)
         success {
-            junit 'target/surefire-reports/*.xml'
+            echo "Build réussie"
         }
     }
 }
