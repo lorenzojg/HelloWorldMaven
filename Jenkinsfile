@@ -7,7 +7,7 @@ pipeline {
     // 'Maven-3.9' doit être un outil configuré dans 
     // "Manage Jenkins" > "Global Tool Configuration".
     tools {
-        maven 'Maven-3.9' 
+        maven 'Maven-3.8' 
     }
 
     triggers {
