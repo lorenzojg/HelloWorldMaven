@@ -65,17 +65,4 @@ pipeline {
             }
         }
     }
-    
-    post {
-        // S'exécute toujours à la fin du pipeline
-        always {
-            echo "Nettoyage de l'espace de travail..."
-            // Supprime tous les fichiers pour libérer de l'espace
-            cleanWs() 
-        }
-        // En cas de succès, archive les résultats des tests (bonne pratique)
-        success {
-            echo "Build réussie"
-        }
-    }
 }
