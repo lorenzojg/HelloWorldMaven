@@ -7,7 +7,7 @@ pipeline {
 
     environment {
         /* Définition du nom du tag. Ici : v1.0. suivi du numéro de build Jenkins */
-        TAG_NAME = "v1.0.${BUILD_NUMBER}"
+        TAG_NAME = "v2.0.${BUILD_NUMBER}"
         /* Mettez l'URL de votre repo SANS le 'https://' */
         REPO_URL_BARE = 'github.com/lorenzojg/HelloWorldMaven.git'
     }
