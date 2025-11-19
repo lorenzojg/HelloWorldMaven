@@ -52,8 +52,8 @@ pipeline {
                     sh """
                     echo "Configuration de l'identité Git pour ce commit..."
                     # C'est une bonne pratique pour l'audit, pour savoir qui a créé le tag
-                    git config user.email "jenkins@votre-domaine.com"
-                    git config user.name "Jenkins CI"
+                    git config user.email "lorenzojg@hotmail.fr"
+                    git config user.name "Lorenzo JACCAUD--GODEFROY"
                     
                     echo "Création du tag annoté : ${tagName}"
                     # Nous créons un tag annoté (-a) avec un message (-m)
