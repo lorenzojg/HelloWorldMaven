@@ -52,6 +52,8 @@ pipeline {
                     echo "Création du tag annoté : ${tagName}"
                     # Nous créons un tag annoté (-a) avec un message (-m)
                     git tag -a ${tagName} -m "Tag créé par Jenkins Build ${env.BUILD_NUMBER}"
+
+                    git remote add origin https://github.com/lorenzojg/HelloWorldMaven.git
                     
                     echo "Push du tag vers 'origin'..."
                     # Pousse le tag spécifique vers le dépôt distant
